@@ -1,4 +1,5 @@
 {
+  "homepage": "http://officialluckyone.github.io/adopt-a-pet-starter",
   "name": "cute-pets-website",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +14,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -D build",
     "build": "react-scripts build",
     "format": "prettier --write .",
     "test": "react-scripts test",
