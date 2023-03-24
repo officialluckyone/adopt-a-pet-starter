@@ -15,8 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -D build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts --openssl-legacy-provider build",
     "format": "prettier --write .",
     "test": "react-scripts test",
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "msw": "^0.28.2",
     "prettier": "^2.2.1"
   },
